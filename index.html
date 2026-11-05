@@ -1,0 +1,1034 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Husain | Odoo Techno-Functional Consultant</title>
+<meta name="description" content="Odoo techno-functional consultant working with Odoo since 2019, across Odoo 11 to 20. Responsible for the full project, from requirement gathering through development, testing, review and production deployment. Flutter mobile apps for Android and iOS.">
+<meta name="theme-color" content="#0A1210">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230A1210'/%3E%3Ctext x='16' y='23' font-family='Arial,sans-serif' font-weight='700' font-size='19' fill='%2334D399' text-anchor='middle'%3EH%3C/text%3E%3C/svg%3E">
+<style>
+:root{--ink:#0A1210;--ink2:#12221D;--paper:#F4F7F5;--card:#FFFFFF;--text:#0F1F1A;--muted:#52605B;--line:#DDE5E1;--deep:#047857;
+--grad:linear-gradient(95deg,#34D399 0%,#A3E635 100%);--on-dark:#EAF2EE;--on-dark-muted:#A6B8B1;
+--sans:"Avenir Next","SF Pro Display","Segoe UI Variable Display","Segoe UI","Helvetica Neue",Ubuntu,Cantarell,"Noto Sans",sans-serif;
+--mono:ui-monospace,"SF Mono",Menlo,Consolas,"DejaVu Sans Mono",monospace}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-padding-top:84px}
+body{margin:0;background:var(--paper);color:var(--text);font:400 17px/1.6 var(--sans)}
+h1,h2,h3,h4{font-weight:700;margin:0;letter-spacing:-.02em}
+p{margin:0}
+a{color:inherit}
+:focus-visible{outline:2px solid #34D399;outline-offset:3px}
+.wrap{width:min(1160px,100% - 48px);margin-inline:auto}
+.skip{position:absolute;left:-999px}
+.skip:focus{left:16px;top:12px;z-index:20;background:#fff;color:#000;padding:8px 12px}
+.grad{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+.nb{white-space:nowrap}
+.btn{display:inline-block;background:var(--grad);color:#06231B;text-decoration:none;font-size:15px;font-weight:700;padding:12px 24px;border-radius:999px;box-shadow:0 8px 28px rgba(52,211,153,.32);transition:transform .15s,box-shadow .15s}
+.btn:hover{transform:translateY(-2px);box-shadow:0 12px 36px rgba(52,211,153,.46)}
+.btn.small{padding:9px 18px;font-size:14px;box-shadow:none}
+.top{position:sticky;top:0;z-index:10;background:rgba(10,18,16,.97);backdrop-filter:blur(12px);border-bottom:1px solid rgba(255,255,255,.08);color:var(--on-dark)}
+.top .wrap{display:flex;align-items:center;gap:30px;min-height:66px}
+.brand{font-size:20px;font-weight:800;letter-spacing:-.02em;text-decoration:none;margin-right:auto}
+.links{display:flex;gap:26px;list-style:none;margin:0;padding:0;font-size:15px}
+.links a{color:var(--on-dark-muted);text-decoration:none;transition:color .15s}
+.links a:hover{color:#fff}
+.dark{position:relative;isolation:isolate;overflow:hidden;background:var(--ink);color:var(--on-dark)}
+.dark::before{content:"";position:absolute;inset:0;z-index:-2;background:radial-gradient(640px 460px at 10% 0%,rgba(16,185,129,.30),transparent 70%),radial-gradient(720px 520px at 92% 28%,rgba(163,230,53,.14),transparent 70%)}
+.dark::after{content:"";position:absolute;inset:0;z-index:-1;background-image:linear-gradient(rgba(255,255,255,.045) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.045) 1px,transparent 1px);background-size:56px 56px;-webkit-mask-image:radial-gradient(ellipse 80% 75% at 50% 25%,#000,transparent);mask-image:radial-gradient(ellipse 80% 75% at 50% 25%,#000,transparent)}
+.hero{display:grid;grid-template-columns:minmax(0,1.75fr) minmax(0,1fr);gap:64px;align-items:center;padding:88px 0 60px}
+.kicker{display:inline-flex;align-items:center;gap:9px;font:500 12.5px var(--mono);letter-spacing:.04em;color:#A7F3D0;border:1px solid rgba(167,243,208,.28);border-radius:999px;padding:6px 14px;margin-bottom:24px}
+.kicker::before{content:"";width:7px;height:7px;border-radius:50%;background:#34D399;box-shadow:0 0 10px #34D399}
+.hero h1{font-size:clamp(40px,5.7vw,68px);font-weight:800;line-height:1.04;letter-spacing:-.035em;color:#fff}
+.lead{margin-top:24px;font-size:19px;line-height:1.6;max-width:60ch}
+.since{margin-top:14px;color:var(--on-dark-muted);max-width:60ch}
+.cta{display:flex;flex-wrap:wrap;align-items:center;gap:22px;margin-top:32px}
+.textlink{font-size:15px;font-weight:600;color:#A7F3D0;text-underline-offset:4px}
+.tracker{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.13);border-radius:20px;padding:26px 28px;backdrop-filter:blur(10px);box-shadow:0 24px 70px rgba(0,0,0,.4)}
+.tracker>p{font:500 12px var(--mono);letter-spacing:.06em;text-transform:uppercase;color:var(--on-dark-muted)}
+.tracker ol{position:relative;list-style:none;margin:18px 0 0;padding:0}
+.tracker ol::before{content:"";position:absolute;left:6px;top:12px;bottom:12px;width:2px;background:rgba(255,255,255,.14)}
+.tracker li{position:relative;display:flex;align-items:center;gap:16px;padding:10px 0;font-size:16px;font-weight:600;color:#fff}
+.tracker li i{position:relative;z-index:1;flex:none;width:14px;height:14px;border-radius:50%;background:#34D399;box-shadow:0 0 0 4px rgba(52,211,153,.18)}
+.tracker li:last-child{color:#D9F99D}
+.tracker li:last-child i{background:#A3E635;box-shadow:0 0 14px #A3E635}
+.stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px;padding-bottom:56px}
+.stat{border-top:1px solid rgba(255,255,255,.14);padding-top:16px}
+.stat b{display:block;font-size:clamp(30px,3.6vw,44px);font-weight:800;line-height:1.1;letter-spacing:-.03em;background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+.stat span{font-size:14px;color:var(--on-dark-muted)}
+.ribbon{overflow:hidden;background:var(--ink2);border-top:1px solid rgba(255,255,255,.08);color:var(--on-dark-muted);-webkit-mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent);mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent)}
+.ribbon div{display:flex;width:max-content}
+.ribbon span{padding:14px 22px;font:500 13.5px var(--mono);white-space:nowrap}
+.band{padding:88px 0}
+.band>.wrap>h2{font-size:clamp(32px,4vw,46px);font-weight:800;letter-spacing:-.03em;line-height:1.1}
+.sub{margin-top:12px;font-size:18px;color:var(--muted);max-width:68ch}
+.steps{list-style:none;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin:44px 0 0;padding:0}
+.step{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:24px 26px;transition:transform .18s,box-shadow .18s,border-color .18s}
+.step:hover{transform:translateY(-4px);box-shadow:0 16px 40px rgba(15,31,26,.09);border-color:#34D399}
+.step .n{display:inline-block;font:600 12.5px var(--mono);color:var(--deep);background:#D1FAE5;border-radius:999px;padding:3px 11px}
+.step h3{font-size:21px;margin:14px 0 8px}
+.step p{font-size:15.5px;color:var(--muted)}
+.step.final{background:var(--ink);border-color:var(--ink);color:#fff;box-shadow:0 16px 44px rgba(4,120,87,.28)}
+.step.final .n{color:#06231B;background:var(--grad)}
+.step.final p{color:var(--on-dark-muted)}
+.alt{background:#fff;border-block:1px solid var(--line)}
+.bento{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin-top:44px}
+.svc{background:var(--paper);border:1px solid var(--line);border-radius:20px;padding:28px 30px;transition:transform .18s,box-shadow .18s}
+.svc:hover{transform:translateY(-4px);box-shadow:0 16px 40px rgba(15,31,26,.09)}
+.ic{display:grid;place-items:center;width:44px;height:44px;border-radius:12px;background:#D1FAE5;color:var(--deep)}
+.ic svg{width:22px;height:22px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.svc h3{font-size:21px;margin:16px 0 12px}
+.svc ul{list-style:none;margin:0;padding:0}
+.svc li{position:relative;padding:5px 0 5px 18px;font-size:15.5px;color:var(--muted)}
+.svc li::before{content:"";position:absolute;left:0;top:14px;width:7px;height:7px;border-radius:50%;background:#34D399}
+.svc.feature{background:var(--ink);border-color:var(--ink);color:#fff}
+.svc.feature li{color:var(--on-dark-muted)}
+.svc.feature .ic{background:var(--grad);color:#06231B}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:32px}
+.chip{font:600 13.5px var(--sans);color:var(--text);background:#fff;border:1px solid var(--line);border-radius:999px;padding:8px 15px;cursor:pointer;transition:border-color .15s,transform .15s}
+.chip span{color:var(--muted);font:400 11.5px var(--mono);margin-left:3px}
+.chip:hover{border-color:#34D399;transform:translateY(-1px)}
+.chip[aria-pressed=true]{background:var(--ink);border-color:var(--ink);color:#fff}
+.chip[aria-pressed=true] span{color:#A3E635}
+.group{margin-top:52px;scroll-margin-top:84px}
+.group[hidden],.card[hidden]{display:none}
+.group header{display:flex;align-items:center;gap:12px}
+.group header::before{content:"";width:10px;height:10px;border-radius:50%;background:var(--c)}
+.group h3{font-size:24px}
+.group header span{margin-left:auto;font:500 12.5px var(--mono);color:var(--muted)}
+.note{margin-top:8px;font-size:14.5px;color:var(--muted)}
+.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(330px,1fr));gap:16px;margin-top:18px}
+.cards:has(details[open]){align-items:start}
+.card{position:relative;overflow:hidden;display:flex;flex-direction:column;background:var(--card);border:1px solid var(--line);border-radius:16px;padding:22px 24px;transition:transform .18s,box-shadow .18s}
+.card::before{content:"";position:absolute;inset:0 0 auto;height:3px;background:var(--c);transform:scaleX(0);transform-origin:left;transition:transform .25s}
+.card:hover{transform:translateY(-3px);box-shadow:0 16px 40px rgba(15,31,26,.09)}
+.card:hover::before{transform:scaleX(1)}
+.meta{display:flex;align-items:center;justify-content:space-between;gap:12px}
+.pill{font-size:12px;font-weight:600;line-height:1.3;color:var(--c);background:#F1F5F3;background:color-mix(in srgb,var(--c) 10%,#fff);border-radius:999px;padding:4px 11px}
+.meta b{font:600 11.5px var(--mono);color:var(--muted);white-space:nowrap}
+.card h4{font-size:19px;line-height:1.25;margin:12px 0 8px}
+.problem{font-size:14.5px;line-height:1.55;color:var(--muted);margin-bottom:14px}
+details{margin-top:auto;font-size:14.5px;line-height:1.6}
+summary{cursor:pointer;list-style:none;font-weight:700;font-size:13.5px;color:var(--c);width:fit-content}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";margin-left:7px;font:500 14px var(--mono)}
+details[open] summary::after{content:"\2212"}
+details[open]>p:first-of-type{margin-top:12px}
+.tags{list-style:none;display:flex;flex-wrap:wrap;gap:5px;margin:14px 0 0;padding:0}
+.tags li{background:#EEF2F0;border-radius:6px;padding:2px 8px;font-size:12px;color:var(--muted)}
+.count{margin-top:12px;font:500 12px var(--mono);color:var(--muted)}
+.xps{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin:40px 0 0}
+.xp{background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:18px 22px}
+.xp dt{font-weight:700;font-size:16.5px;letter-spacing:-.01em}
+.xp dd{margin:6px 0 0;font-size:14.5px;color:var(--muted)}
+.close{padding:96px 0 44px;text-align:center}
+.close p.big{font-size:clamp(28px,3.8vw,44px);font-weight:800;line-height:1.15;letter-spacing:-.03em;color:#fff;max-width:24em;margin-inline:auto}
+.closeline{color:#A7F3D0;font-size:16px;margin-bottom:14px}
+.close .btn{margin-top:32px}
+.foot{margin-top:72px;font-size:13px;color:var(--on-dark-muted)}
+@media (prefers-reduced-motion:no-preference){
+html{scroll-behavior:smooth}
+.rise{animation:rise .7s cubic-bezier(.2,.7,.2,1) both}
+.d1{animation-delay:.07s}.d2{animation-delay:.14s}.d3{animation-delay:.21s}.d4{animation-delay:.3s}
+@keyframes rise{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+.ribbon div{animation:slide 42s linear infinite}
+.ribbon:hover div{animation-play-state:paused}
+@keyframes slide{to{transform:translateX(-50%)}}
+.tracker li{animation:lit 8s linear infinite;animation-delay:calc(var(--i,0) * 1.6s)}
+.tracker li i{animation:pulse 8s linear infinite;animation-delay:calc(var(--i,0) * 1.6s)}
+@keyframes lit{0%,22%{color:#fff}30%,100%{color:#C3D2CC}}
+@keyframes pulse{0%,18%{transform:scale(1.25);box-shadow:0 0 18px #34D399}28%,100%{transform:none;box-shadow:0 0 0 4px rgba(52,211,153,.18)}}
+@supports (animation-timeline:view()){
+@media screen{.reveal{animation:rise linear both;animation-timeline:view();animation-range:entry 0% entry 40%}}
+}
+}
+@media (max-width:980px){
+.hero{grid-template-columns:1fr;gap:40px;padding:60px 0 44px}
+.steps{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media (max-width:760px){
+body{font-size:16px}
+.wrap{width:calc(100% - 40px)}
+.top .wrap{min-height:60px}
+.links{display:none}
+.lead{font-size:18px}
+.stats{grid-template-columns:repeat(2,minmax(0,1fr));padding-bottom:40px}
+.band{padding:60px 0}
+.steps,.bento,.xps{grid-template-columns:minmax(0,1fr)}
+.chips{flex-wrap:nowrap;overflow-x:auto;margin-inline:-20px;padding:0 20px 8px;scrollbar-width:none}
+.chip{flex:none}
+.cards{grid-template-columns:minmax(0,1fr)}
+.close{padding-top:64px}
+}
+@media print{.top,.chips,.ribbon{display:none}.dark{background:#fff;color:#000}.card{break-inside:avoid}}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<nav class="top" aria-label="Main">
+  <div class="wrap">
+    <a class="brand" href="#main">Husain</a>
+    <ul class="links">
+      <li><a href="#deliver">How I deliver</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#expertise">Expertise</a></li>
+    </ul>
+    <a class="btn small" href="https://www.upwork.com/freelancers/~01d5ccd6340b47c4d6" rel="noopener">Upwork profile</a>
+  </div>
+</nav>
+
+<main id="main">
+<div class="dark">
+  <div class="wrap">
+    <header class="hero">
+      <div>
+        <span class="kicker rise">Requirement gathering to delivery</span>
+        <h1 class="rise d1">Odoo <span class="grad nb">Techno-Functional</span> Consultant</h1>
+        <p class="lead rise d2">I'm an Odoo techno-functional consultant for implementation, customization, migration and integrations. I take responsibility for the full project, from requirement gathering through development, testing, review and production deployment, with systems built to scale and delivered on agreed timelines.</p>
+        <p class="since rise d2">I've worked with Odoo since 2019, from version 11 through Odoo 19 and Odoo 20, on Enterprise, Community and Odoo.sh.</p>
+        <div class="cta rise d3">
+          <a class="btn" href="https://www.upwork.com/freelancers/~01d5ccd6340b47c4d6" rel="noopener">View my Upwork profile</a>
+          <a class="textlink" href="#projects">See my projects</a>
+        </div>
+      </div>
+      <aside class="tracker rise d4" aria-hidden="true">
+        <p>Your project, start to finish</p>
+        <ol>
+          <li style="--i:0"><i></i>Requirement gathering</li>
+          <li style="--i:1"><i></i>Development</li>
+          <li style="--i:2"><i></i>Testing and review</li>
+          <li style="--i:3"><i></i>Production deployment</li>
+          <li style="--i:5"><i></i>Delivery</li>
+        </ol>
+      </aside>
+    </header>
+    <div class="stats rise d4">
+      <div class="stat"><b>2019</b><span>Working with Odoo since</span></div>
+      <div class="stat"><b>11&ndash;20</b><span>Odoo versions</span></div>
+      <div class="stat"><b>59</b><span>Project examples</span></div>
+      <div class="stat"><b>7</b><span>Flutter app projects</span></div>
+    </div>
+  </div>
+  <div class="ribbon" aria-hidden="true"><div><span>Odoo</span><span>Python</span><span>PostgreSQL</span><span>OWL</span><span>Flutter</span><span>Dart</span><span>Firebase</span><span>KNET</span><span>MyFatoorah</span><span>Tap</span><span>Hesabe</span><span>Amazon</span><span>Flipkart</span><span>Shopify</span><span>WooCommerce</span><span>UrbanPiper</span><span>Shiprocket</span><span>WhatsApp</span><span>Xero</span><span>JSON-RPC</span><span>Docker</span><span>Odoo</span><span>Python</span><span>PostgreSQL</span><span>OWL</span><span>Flutter</span><span>Dart</span><span>Firebase</span><span>KNET</span><span>MyFatoorah</span><span>Tap</span><span>Hesabe</span><span>Amazon</span><span>Flipkart</span><span>Shopify</span><span>WooCommerce</span><span>UrbanPiper</span><span>Shiprocket</span><span>WhatsApp</span><span>Xero</span><span>JSON-RPC</span><span>Docker</span></div></div>
+</div>
+
+<section class="band" id="deliver">
+  <div class="wrap">
+    <h2>How I deliver</h2>
+    <p class="sub">One person responsible for your project, from requirement gathering to delivery.</p>
+    <ol class="steps">
+      <li class="step reveal"><span class="n">01</span><h3>Requirement gathering</h3><p>I map your business process and agree the scope before work starts</p></li>
+      <li class="step reveal"><span class="n">02</span><h3>Development</h3><p>Custom Odoo modules with Python, PostgreSQL and OWL, and Flutter mobile apps where you need them</p></li>
+      <li class="step reveal"><span class="n">03</span><h3>Testing and review</h3><p>Automated tests and code review on a staging copy</p></li>
+      <li class="step reveal"><span class="n">04</span><h3>Production deployment</h3><p>Planned go-live once you've signed off on staging</p></li>
+      <li class="step reveal"><span class="n">05</span><h3>Scalability</h3><p>Multi-branch operations and high transaction volumes, with performance tuned as you grow</p></li>
+      <li class="step reveal final"><span class="n">06</span><h3>Delivery</h3><p>Delivered on agreed timelines, and I tell you plainly what's done and what isn't</p></li>
+    </ol>
+  </div>
+</section>
+
+<section class="band alt" id="services">
+  <div class="wrap">
+    <h2>What I work on</h2>
+    <div class="bento">
+      <div class="svc reveal"><span class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg></span><h3>Odoo modules and industries</h3><ul><li>POS, inventory, accounting, HR and payroll, CRM, manufacturing, eCommerce, insurance and real estate</li><li>Retail, restaurants, healthcare, logistics and trading, including GCC businesses</li></ul></div>
+      <div class="svc reveal feature"><span class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="6" y="2" width="12" height="20" rx="2.5"/><path d="M11 18h2"/></svg></span><h3>Flutter mobile apps for Android and iOS</h3><ul><li>Offline-first tablet POS apps for restaurants and retail</li><li>Delivery and driver apps with push notifications</li><li>Clinic doctor and patient booking apps</li><li>Employee and manager HR self-service apps</li></ul></div>
+      <div class="svc reveal"><span class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 2v5M15 2v5M7 7h10v4a5 5 0 0 1-10 0V7zM12 16v6"/></svg></span><h3>Odoo integrations</h3><ul><li>Payment gateways and POS terminals: KNET, MyFatoorah, Tap, Hesabe, Cybersource, NMI</li><li>Marketplaces and eCommerce: Amazon, Flipkart, Shopify, WooCommerce, Magento</li><li>Delivery and shipping: UrbanPiper (Talabat, Deliveroo), Shiprocket</li><li>WhatsApp, Firebase, REST APIs, JSON-RPC and biometric attendance devices</li></ul></div>
+      <div class="svc reveal"><span class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12a9 9 0 1 1-2.6-6.4M21 3v5h-5"/></svg></span><h3>Odoo migration, audit and rescue</h3><ul><li>Odoo version upgrades with custom modules, and data migration from Xero</li><li>Fixing stock valuation errors, duplicate or missing journal entries, stuck orders and slow reports</li></ul></div>
+    </div>
+  </div>
+</section>
+
+<section class="band" id="projects">
+  <div class="wrap">
+    <h2>Projects</h2>
+    <p class="sub">Client names and data stay confidential, so my project examples describe the work without naming anyone.</p>
+    <div class="chips" role="group" aria-label="Filter projects">
+        <button class="chip" type="button" data-filter="all" aria-pressed="true">All <span>59</span></button>
+        <button class="chip" type="button" data-filter="mobile" aria-pressed="false">Mobile Apps <span>8</span></button>
+        <button class="chip" type="button" data-filter="healthcare" aria-pressed="false">Healthcare <span>6</span></button>
+        <button class="chip" type="button" data-filter="pos" aria-pressed="false">POS &amp; Retail <span>18</span></button>
+        <button class="chip" type="button" data-filter="food" aria-pressed="false">Food &amp; Beverage <span>6</span></button>
+        <button class="chip" type="button" data-filter="hr" aria-pressed="false">HR &amp; Payroll <span>7</span></button>
+        <button class="chip" type="button" data-filter="ecommerce" aria-pressed="false">E-Commerce <span>6</span></button>
+        <button class="chip" type="button" data-filter="logistics" aria-pressed="false">Logistics <span>4</span></button>
+        <button class="chip" type="button" data-filter="realestate" aria-pressed="false">Real Estate <span>1</span></button>
+        <button class="chip" type="button" data-filter="insurance" aria-pressed="false">Insurance <span>2</span></button>
+        <button class="chip" type="button" data-filter="crm" aria-pressed="false">CRM <span>3</span></button>
+        <button class="chip" type="button" data-filter="accounting" aria-pressed="false">Accounting <span>5</span></button>
+        <button class="chip" type="button" data-filter="trading" aria-pressed="false">Trading &amp; SaaS <span>5</span></button>
+        <button class="chip" type="button" data-filter="odoo20" aria-pressed="false">Odoo 20 <span>2</span></button>
+        <button class="chip" type="button" data-filter="migration" aria-pressed="false">Migration &amp; Rescue <span>4</span></button>
+        <button class="chip" type="button" data-filter="tools" aria-pressed="false">Products &amp; Tools <span>5</span></button>
+    </div>
+    <section class="group" id="mobile" style="--c:#047857">
+      <header><h3>Mobile Apps (Flutter)</h3><span>7</span></header>
+      <div class="cards">
+        <article class="card reveal" data-category="mobile pos food">
+          <p class="meta"><span class="pill">Restaurants, Quick-Service &amp; Retail</span><b>Flutter</b></p>
+          <h4>Offline-First Tablet POS Apps</h4>
+          <p class="problem">Restaurants and shops can't stop selling when the network drops, and cashiers need a fast tablet POS that stays in step with Odoo.</p>
+          <details>
+            <summary>What I did</summary>
+            <p>Built Flutter tablet POS apps with a local offline database, so sales continue without a connection and sync in the background with retry, backoff and a dead-letter queue. Covers catalog, cart, modifiers, discounts, payments, refunds, audit log, receipt printing and delivery aggregator orders with a preparation timer. Separate builds serve restaurants, quick-service chains and made-to-measure retail on Odoo 18, 19 and 20.</p>
+            <ul class="tags"><li>Flutter</li><li>Offline Sync</li><li>Riverpod</li><li>Drift</li><li>ESC/POS Receipts</li><li>Aggregator Orders</li><li>Android</li><li>iOS</li></ul>
+            <p class="count">1,300+ automated tests on the latest build</p>
+          </details>
+        </article>
+        <article class="card reveal" data-category="mobile logistics">
+          <p class="meta"><span class="pill">B2B Logistics</span><b>Flutter</b></p>
+          <h4>Delivery Marketplace Apps</h4>
+          <p class="problem">A delivery marketplace needed customers, delivery companies and drivers on separate apps, all working from one Odoo backend.</p>
+          <details>
+            <summary>What I did</summary>
+            <p>Built three Flutter apps on Odoo 19 APIs: customer, delivery company and driver. Orders are broadcast to delivery companies, drivers get alarm-style alerts through dedicated push channels, and heartbeats keep driver status current. Customers can book delivery slots.</p>
+            <ul class="tags"><li>Flutter</li><li>Firebase Push</li><li>Driver App</li><li>Slot Booking</li><li>Order Broadcast</li></ul>
+            <p class="count">3 apps</p>
+          </details>
+        </article>
+        <article class="card reveal" data-category="mobile logistics">
+          <p class="meta"><span class="pill">Last-Mile Delivery</span><b>Flutter</b></p>
+          <h4>Own-Fleet Last-Mile Driver App</h4>
+          <p class="problem">A white-label delivery platform needed a driver app that handles real pickup and cash-on-delivery flows.</p>
+          <details>
+            <summary>What I did</summary>
+            <p>Built the driver app for an Odoo 19 last-mile platform, covering pickup flows, status updates, push notifications and cash-on-delivery confirmation.</p>
+            <ul class="tags"><li>Flutter</li><li>Pickup Flows</li><li>Cash on Delivery</li><li>Firebase Push</li></ul>
+            <p class="count">White-label driver app</p>
+          </details>
+        </article>
+        <article class="card reveal" data-category="mobile">
+          <p class="meta"><span class="pill">Healthcare</span><b>Flutter</b></p>
+          <h4>Clinic Doctor &amp; Patient Apps</h4>
+          <p class="problem">A multi-specialty clinic group needed apps for doctors and patients on top of its hospital system.</p>
+          <details>
+            <summary>What I did</summary>
+            <p>Built two Flutter apps on Odoo 17 and a hospital management system. Doctors handle check-ups and priced service lines. Patients sign in, find doctors and book by live capacity.</p>
+            <ul class="tags"><li>Flutter</li><li>Doctor App</li><li>Patient App</li><li>Online Booking</li><li>Live Capacity</li></ul>
+            <p class="count">2 apps</p>
+          </details>
+        </article>
+        <article class="card reveal" data-category="mobile hr">
+          <p class="meta"><span class="pill">HR Self-Service</span><b>Flutter</b></p>
+          <h4>Employee &amp; Manager HR App</h4>
+          <p class="problem">Employees and managers needed HR requests and approvals on their phones.</p>
+          <details>
+            <summary>What I did</summary>
+            <p>Built a Flutter self-service app on an Odoo 18 mobile API. Employees raise overtime and loan requests, and managers review and approve them from the app.</p>
+            <ul class="tags"><li>Flutter</li><li>Self-Service</li><li>Overtime</li><li>Loans</li><li>Manager Approvals</li></ul>
+            <p class="count">Employee + manager app</p>
+          </details>
+        </article>
+        <article class="card reveal" data-category="mobile">
+          <p class="meta"><span class="pill">Community Healthcare</span><b>Flutter</b></p>
+          <h4>Medical Camp App</h4>
+          <p class="problem">Field teams running medical camps needed to record people on site and follow up afterwards.</p>
+          <details>
+            <summary>What I did</summary>
+            <p>Built a Flutter app on Odoo 17 for camp registrations, feedback, follow-ups and notices.</p>
+            <ul class="tags"><li>Flutter</li><li>Field Registration</li><li>Follow-Ups</li><li>Notices</li></ul>
+            <p class="count">Field app</p>
+          </details>
+        </article>
+        <article class="card reveal" data-category="mobile crm">
+          <p class="meta"><span class="pill">Telemarketing</span><b>Flutter</b></p>
+          <h4>Contact Center Agent App</h4>
+          <p class="problem">Contact center agents needed a mobile client connected to their phone system.</p>
+          <details>
+            <summary>What I did</summary>
+            <p>Built a Flutter agent app for Asterisk and VICIdial, alongside an Odoo telemarketing module.</p>
+            <ul class="tags"><li>Flutter</li><li>Asterisk</li><li>VICIdial</li><li>Agent App</li></ul>
+            <p class="count">Mobile agent client</p>
+          </details>
+        </article>
+      </div>
+    </section>
+    <section class="group" style="--c:#0369A1">
+      <header><h3>Healthcare</h3><span>6</span></header>
+      <p class="note">Coverage: patient management, clinical workflows, diagnostics, pharmacy, hospitalization, insurance &amp; billing, digital health, specialties.</p>
+      <div class="cards">
+        <article class="card reveal" data-category="healthcare">
+          <p class="meta"><span class="pill">Healthcare</span><b>Odoo 17</b></p>
+          <h4>Hospital Management System (ACS HMS)</h4>
+          <p class="problem">Implementation and customization of the ACS Hospital Management System on Odoo 17, an 87-module suite that digitizes every department of a hospital — from the front desk to the operating theater.</p>
+          <details>
+            <summary>What I did</summary>
+            <p>Patients are registered with full medical histories and alerts. Doctors manage appointments, write prescriptions, and order lab/radiology tests — all from one screen. The pharmacy module handles dispensing with lot tracking and POS billing. Inpatient (IPD) covers admission, ward assignment, surgery scheduling, nursing rounds, and discharge. Insurance claims are auto-generated against TPA policies. Patients can book appointments online, view prescriptions, and join video consultations through a self-service portal. Specialty modules cover dental (with tooth charts), gynecology, pediatrics, ophthalmology, physiotherapy, and emergency care. Communication is handled via SMS, WhatsApp, and email notifications.</p>
+            <ul class="tags"><li>Patient Records</li><li>Appointments</li><li>Prescriptions</li><li>Lab Tests</li><li>Radiology</li><li>Pharmacy</li><li>Surgery</li><li>IPD/Hospitalization</li><li>Insurance Claims</li><li>Blood Bank</li><li>Vaccination</li><li>Nursing</li><li>Operation Theater</li><li>Emergency</li><li>Patient Portal</li><li>Online Booking</li><li>Video Consult</li><li>SMS/WhatsApp</li></ul>
+            <p class="count">87 modules</p>
+          </details>
+        </article>
+        <article class="card reveal" data-category="healthcare">
+          <p class="meta"><span class="pill">Healthcare</span><b>Odoo 17</b></p>
+          <h4>Multi-Specialty Medical Group</h4>
+          <p class="problem">A heavily customized deployment of the ACS HMS for a multi-location medical group in the GCC, with 50+ bespoke modules layered on top of the core hospital system to match their exact clinical and financial workflows.</p>
+          <details>
+            <summary>What I did</summary>
+            <p>Built on top of the full ACS HMS, this project adds custom appointment workflows with calendar-based doctor scheduling, national ID smart card reader integration for patient identification, and a rules engine for insurance coverage validation at the point of care. Financial operations include advance payment collection, daily collection reporting per branch, indemnity/malpractice insurance calculations, and voucher-based discount programs. The HR side covers Kuwait labor law payroll, physician work-hour tracking, overtime management, and leave policy automation. Role-based access groups enforce who can see what across multiple clinics, and custom appointment analytics provide management with real-time performance data.</p>
+            <ul class="tags"><li>Custom Appointments</li><li>Insurance Rules Engine</li><li>Physician Scheduling</li><li>Advance Payments</li><li>Daily Collection Reports</li><li>Indemnity Calculator</li><li>Smart Card Reader</li><li>Role-Based Access</li><li>Kuwait HR Payroll</li><li>Overtime Tracking</li><li>Voucher Discounts</li><li>Appointment Analytics</li></ul>
+            <p class="count">85 modules</p>
+          </details>
+        </article>
+        <article class="card reveal" data-category="healthcare">
+          <p class="meta"><span class="pill">Healthcare</span><b>Odoo 17 + Odoo 13</b></p>
+          <h4>Clinic Management Suite</h4>
+          <p class="problem">A purpose-built clinic management system originally deployed on Odoo 13 and later migrated to Odoo 17, serving as the day-to-day operating system for a medical clinic — covering everything from patient walk-in to billing and HR.</p>
+          <details>
+            <summary>What I did</summary>
+            <p>The system starts with a patient-facing appointment booking and waiting list. Doctors access their own portal to view daily schedules, write prescriptions (including eyeglass prescriptions), record examination findings, upload medical images, and issue sick reports. Each patient maintains a complete medical file with analysis history. The clinic runs on session-based billing where services are grouped into packages with insurance coverage. Behind the scenes, procurement workflows handle medical supply purchasing with approval chains, and the full HR/payroll suite manages clinic staff contracts, attendance, leave, end-of-service, and custody of clinic equipment. A loyalty program incentivizes returning patients.</p>
+            <ul class="tags"><li>Doctor Portal</li><li>Patient Files</li><li>Prescriptions</li><li>Eyeglass Rx</li><li>Sick Reports</li><li>Medical Analysis</li><li>Session Management</li><li>Waiting List</li><li>Insurance Packages</li><li>Clinic HR/Payroll</li><li>Procurement Approvals</li><li>Patient Loyalty</li></ul>
+            <p class="count">52 modules (v13) + 40 modules (v17)</p>
+          </details>
+        </article>
+        <article class="card reveal" data-category="healthcare">
+          <p class="meta"><span class="pill">Healthcare</span><b>Odoo 17</b></p>
+          <h4>Medical Supply Chain</h4>
+          <p class="problem">A supply chain and inventory management system built for a healthcare distributor, handling the flow of medical supplies from procurement through multi-branch warehousing to sales fulfillment.</p>
+          <details>
+            <summary>What I did</summary>
+            <p>Staff at any branch can raise material requests that route through an approval workflow before generating inter-branch stock transfers. Purchase orders from different departments can be merged to consolidate supplier orders and negotiate better pricing. Sales teams earn commissions tracked automatically against margin thresholds. The system includes barcode generation for product labeling, warehouse-level analytics for stock movement and valuation, and custom PDF/Excel reports for accounting. Products are tracked with effective dates for accurate costing and stock valuation.</p>
+            <ul class="tags"><li>Material Requests</li><li>Branch Transfers</li><li>PO Merging</li><li>Sales Commission</li><li>Warehouse Reports</li><li>Barcode Generation</li></ul>
+            <p class="count">15 modules</p>
+          </details>
+        </article>
+        <article class="card reveal" data-category="healthcare">
+          <p class="meta"><span class="pill">Healthcare</span><b>Odoo 17</b></p>
+          <h4>Medical Camps: Event-Based Healthcare</h4>
+          <p class="problem">A lightweight system designed for organizing and running field medical camps — collecting patient data at scale during health screening events and syncing it back to the central ERP.</p>
+          <details>
+            <summary>What I did</summary>
+            <p>Field workers collect patient information (including disability assessments) through external forms that push data into Odoo via webhooks. Batch import scripts process Excel spreadsheets of patient records gathered at camp sites, creating or updating patient profiles in bulk. The system tracks camp schedules, locations, and outcomes, giving organizers a centralized view of all medical outreach activity and patient follow-up needs.</p>
+            <ul class="tags"><li>Webhook Integration</li><li>Patient Data Import</li><li>Disability Tracking</li><li>Camp Scheduling</li></ul>
+            <p class="count">3 modules + data scripts</p>
+          </details>
+        </article>
+        <article class="card reveal" data-category="healthcare">
+          <p class="meta"><span class="pill">Healthcare</span><b>Odoo 17</b></p>
+          <h4>Healthcare Appointment Data Pipeline</h4>
+          <p class="problem">An appointment data pipeline for a healthcare organization that needed to migrate, clean, and batch-process thousands of historical appointment records into their new Odoo-based system.</p>
+          <details>
+            <summary>What I did</summary>
+            <p>Custom Python scripts handle bulk appointment imports with data validation, deduplication, and field mapping from legacy formats. The system renames and normalizes appointment records to match the new data model, processes historical scheduling data, and ensures continuity of patient appointment history. Automated workflows keep the appointment calendar synchronized and up to date across the organization.</p>
+            <ul class="tags"><li>Batch Appointments</li><li>Data Processing</li><li>Scheduling</li><li>Automation Scripts</li></ul>
+            <p class="count">Automation &amp; data pipeline</p>
+          </details>
+        </article>
+      </div>
+    </section>
+    <section class="group" style="--c:#B45309">
+      <header><h3>POS &amp; Retail Systems</h3><span>13</span></header>
+      <div class="cards">
+        <article class="card reveal" data-category="pos food">
+          <p class="meta"><span class="pill">Food Manufacturing</span><b>Odoo 19</b></p>
+          <h4>Confectionery &amp; Chocolate Manufacturing</h4>
+          <p class="problem">Food manufacturers needed production, POS and costing to agree, and their stock values to be explainable.</p>
+          <details>
+            <summary>What I did</summary>
+            <p>Ran stock valuation analysis for a sweets business on POS and manufacturing, and built a production quantity correction module. Scoped the finance phase for a chocolate manufacturer with manufacturing and inventory already live.</p>
+            <ul class="tags"><li>MRP</li><li>AVCO</li><li>Stock Valuation</li><li>Quantity Correction</li></ul>
+            <p class="count">Manufacturing + POS</p>
+          </details>
+        </article>
+        <article class="card reveal" data-category="pos food">
+          <p class="meta"><span class="pill">Hospitality / Retail POS</span><b>Odoo 18</b></p>
+          <h4>Multi-Branch Hospitality Framework</h4>
+          <p class="problem">A hospitality group operating multiple restaurant and retail branches needed a single unified platform to run POS, inventory across locations, kitchen operations, mobile ordering, employee management, and accounting — with everything synced in real time.</p>
+          <details>
+            <summary>What I did</summary>
+            <p>Built a 76-module enterprise framework from the ground up on Odoo 18. The POS supports food modifiers (extra cheese, no onion, etc.) rendered through BOM-based recipes, with orders flowing to a kitchen display system for preparation tracking. A custom mobile API powers a companion app for tableside ordering. The inventory system features a proprietary negative lot stock engine that allows sales to proceed even when stock counts lag behind reality — a critical need for high-volume food service. Internal material requests enable branches to request stock from each other through a two-step approval and picking flow. The UrbanPiper integration connects to delivery aggregators (Talabat, Deliveroo). Employee portals let staff view payslips, request overtime, and manage documents. Multi-company architecture supports the parent company overseeing all branches. Later work added an asynchronous report engine, monthly HR provision accounting and a Flutter tablet POS.</p>
+            <ul class="tags"><li>POS Modifiers</li><li>Kitchen Display</li><li>Mobile API</li><li>Negative Lot Stock</li><li>Material Requests</li><li>Recipe Management</li><li>UrbanPiper</li><li>Multi-Company</li><li>HR/Payroll</li></ul>
+            <p class="count">76 custom modules</p>
+          </details>
+        </article>
+        <article class="card reveal" data-category="pos food">
+          <p class="meta"><span class="pill">Food &amp; Restaurant Operations</span><b>Odoo 18</b></p>
+          <h4>Restaurant Operations System</h4>
+          <p class="problem">A food business needed a full restaurant operations system covering kitchen-to-table workflow, ingredient-level cost tracking, food safety via expiry management, and integration with delivery platforms.</p>
+          <details>
+            <summary>What I did</summary>
+            <p>Deployed the same restaurant framework, customized for a food operation. Recipes are defined at the ingredient level using Odoo's manufacturing BOM, enabling real-time cost-per-dish tracking. When an order is placed, a kitchen preparation display shows cooks what to prepare with modifier details. Inventory deducts ingredients automatically per recipe. The negative lot stock system tracks food batches by expiry date, ensuring FIFO compliance. UrbanPiper integration syncs the menu, prices, and availability to delivery platforms. Employee overtime, payroll portals, and shift management handle the restaurant workforce. Multi-location stock synchronization ensures central kitchen supplies flow to branch outlets seamlessly.</p>
+            <ul class="tags"><li>Restaurant POS</li><li>Recipe Management</li><li>Kitchen Display</li><li>UrbanPiper</li><li>Food Expiry Tracking</li></ul>
+            <p class="count">60+ modules</p>
+          </details>
+        </article>
+        <article class="card reveal" data-category="pos">
+          <p class="meta"><span class="pill">Retail / Supply Chain</span><b>Odoo 19</b></p>
+          <h4>Multi-Branch Retail Chain</h4>
+          <p class="problem">A multi-branch retail chain on Odoo 19 needed streamlined barcode operations, inter-store stock transfers, smart purchasing workflows, and POS customizations for their unique product mix.</p>
+          <details>
+            <summary>What I did</summary>
+            <p>Built a retail management suite with ZPL barcode label printing directly from product screens, supporting multiple barcodes per product for different packaging (box vs. unit). Material requests let store managers request stock from the central warehouse with location-based approval routing. Minimum stock thresholds trigger automatic alerts to purchasing. A box-to-unit conversion system handles wholesale-to-retail quantity breaks. Purchase workflows include approval notifications, discount management, and a "most bought products" shortlist for fast reordering. Custom POS receipts, discount rules, and extra service add-ons (gift wrapping, engraving) complete the in-store experience.</p>
+            <ul class="tags"><li>Barcode ZPL</li><li>Material Requests</li><li>Stock Alerts</li><li>Box Conversion</li><li>Purchase Approval</li></ul>
+            <p class="count">29 modules</p>
+          </details>
+        </article>
+        <article class="card reveal" data-category="pos">
+          <p class="meta"><span class="pill">Beauty / Cosmetics Retail</span><b>Odoo 19</b></p>
+          <h4>Beauty &amp; Cosmetics Retail POS</h4>
+          <p class="problem">A beauty and cosmetics retailer entering the Kuwait market needed a POS system that enforces invoicing on every transaction, restricts staff to their assigned warehouse, and supports fast customer onboarding.</p>
+          <details>
+            <summary>What I did</summary>
+            <p>Built on Odoo 19, the POS auto-enables invoicing for every order (required for tax compliance). Warehouse access controls ensure each cashier only sees and sells from their assigned location's stock. Quick customer creation lets cashiers register new customers by mobile number in seconds. Products are organized by brand with a dedicated branding module for filtering and reporting. Custom receipt layouts include store terms and conditions. A material request system handles inter-store transfers. Barcode reports enable bulk label printing for new stock arrivals.</p>
+            <ul class="tags"><li>Auto Invoice</li><li>Product Branding</li><li>Warehouse ACL</li><li>Custom Receipts</li></ul>
+            <p class="count">6 modules</p>
+          </details>
+        </article>
+        <article class="card reveal" data-category="pos food">
+          <p class="meta"><span class="pill">Food / Multi-Channel Retail</span><b>Odoo 17</b></p>
+          <h4>Multi-Channel Food &amp; Beverage Group</h4>
+          <p class="problem">A food and beverage group selling through physical stores, their own website, and delivery apps needed all channels unified in one system with real-time delivery tracking and multiple Kuwait payment gateways.</p>
+          <details>
+            <summary>What I did</summary>
+            <p>Built a multi-channel retail platform where POS orders, website orders, and delivery orders all flow into the same Odoo backend. Porter delivery API integration enables real-time driver assignment, tracking, and delivery status updates. Hesabe and Deema payment gateways handle Kuwait-specific payment methods. Combo product bundles let customers buy meal deals at discounted prices. A loyalty program tracks points across all channels. Google Tag Manager and Facebook Pixel integrations feed marketing analytics. Custom POS sequences, journal entry printing, and detailed sales/purchase/picking reports give management full visibility. Bulk input support on POS handles high-volume catering orders.</p>
+            <ul class="tags"><li>Porter Delivery</li><li>Hesabe Pay</li><li>Deema Pay</li><li>Combo Products</li><li>Loyalty</li><li>Analytics Pixels</li></ul>
+            <p class="count">24 modules</p>
+          </details>
+        </article>
+        <article class="card reveal" data-category="pos">
+          <p class="meta"><span class="pill">Entertainment / Water Park</span><b>Odoo 17</b></p>
+          <h4>Entertainment Venue Rental POS</h4>
+          <p class="problem">A water park / trampoline park entertainment venue needed a POS that handles time-based admissions, equipment rentals, activity-based pricing, and recurring session bookings — not just product sales.</p>
+          <details>
+            <summary>What I did</summary>
+            <p>Built a rental-oriented POS system where customers purchase time-based sessions (1-hour pool access, 30-min trampoline, etc.) with activity-specific pricing. Equipment rentals (towels, lockers, floats) are tracked per customer session with automatic return tracking. POS session management controls daily opening, closing, and cash reconciliation. Recurring bookings handle party packages and seasonal passes. Hesabe payment gateway processes Kuwait-based card payments. Custom reports track revenue by activity type, session utilization rates, and peak hours. POS branding with custom logos and receipt layouts matches the venue's identity.</p>
+            <ul class="tags"><li>Rental POS</li><li>Session Management</li><li>Activity Pricing</li><li>Hesabe Pay</li></ul>
+            <p class="count">8 modules</p>
+          </details>
+        </article>
+        <article class="card reveal" data-category="pos">
+          <p class="meta"><span class="pill">All-in-One Retail POS</span><b>Odoo 18</b></p>
+          <h4>Retail POS Suite</h4>
+          <p class="problem">A retail business needed a feature-rich POS with end-of-day Z-reports, profitability analytics, order returns/exchanges, and the ability to handle donation orders alongside regular sales.</p>
+          <details>
+            <summary>What I did</summary>
+            <p>Deployed an all-in-one retail POS suite with Z-reports for daily cash settlement, day-wise sales breakdowns, and payment method analysis. Product profitability reports show margin per item. Customer analysis tracks purchase patterns and spending. The POS handles cash in/out operations, signature capture for high-value transactions, and full return/exchange workflows with reason tracking. Multi-barcode support means products can be scanned from any packaging. WhatsApp integration sends digital receipts to customers. A custom donation module allows charitable contributions to be processed through the same POS with separate accounting treatment. Bag charge tracking and order labeling handle regulatory requirements.</p>
+            <ul class="tags"><li>Z-Reports</li><li>Returns</li><li>WhatsApp</li><li>Donations</li><li>Multi-Barcode</li></ul>
+            <p class="count">5 modules</p>
+          </details>
+        </article>
+        <article class="card reveal" data-category="pos">
+          <p class="meta"><span class="pill">Manufacturing / Wholesale</span><b>Odoo 16</b></p>
+          <h4>Tools Wholesaler: Inventory Intelligence</h4>
+          <p class="problem">An Australian tools manufacturer and wholesaler with multiple warehouses needed enterprise-grade inventory intelligence — demand forecasting, ABC classification, smart reordering, and returns management — plus Australian payment methods (Afterpay, ZipPay).</p>
+          <details>
+            <summary>What I did</summary>
+            <p>Built an advanced inventory and logistics system with ABC analysis that classifies products by revenue contribution to optimize stocking strategy. Smart reorder rules suggest quantities based on historical demand patterns and lead times. RMA (Return Merchandise Authorization) handles customer returns with reason codes, replacement tracking, and credit note generation. Intercompany transactions move stock between legal entities with automatic accounting entries. Product records track physical dimensions, weight, and packaging for shipping calculations. A native POS manager handles in-store sales with thermal printer integration. Afterpay and ZipPay payment providers enable buy-now-pay-later for Australian customers. Inventory ledger and sales performance reports give management real-time visibility.</p>
+            <ul class="tags"><li>ABC Analysis</li><li>RMA Returns</li><li>Afterpay</li><li>ZipPay</li><li>Intercompany</li><li>Demand Forecast</li></ul>
+            <p class="count">100+ modules</p>
+          </details>
+        </article>
+        <article class="card reveal" data-category="pos">
+          <p class="meta"><span class="pill">Bike / Equipment Rental</span><b>Odoo 16</b></p>
+          <h4>Bike &amp; Equipment Rental</h4>
+          <p class="problem">A bike and equipment rental company needed a system to manage rental agreements, capture customer ID photos on the spot, collect digital signatures, print thermal receipts, and track asset condition over time.</p>
+          <details>
+            <summary>What I did</summary>
+            <p>Built a rental lifecycle system where customers sign digital rental agreements on a tablet at the counter. A webcam integration captures customer ID photos and stores them against the rental record for verification. Thermal printers produce instant rental receipts with terms, pricing, and return deadlines. Asset management tracks each bike/equipment item through its lifecycle — availability, current rental, maintenance history, and depreciation. The POS handles walk-in rentals with custom receipt formats showing rental duration, deposit amounts, and late-return charges. Document management stores signed agreements as PDF attachments linked to each transaction.</p>
+            <ul class="tags"><li>Rental System</li><li>Digital Signing</li><li>Webcam Capture</li><li>Asset Tracking</li></ul>
+            <p class="count">12 modules</p>
+          </details>
+        </article>
+        <article class="card reveal" data-category="pos">
+          <p class="meta"><span class="pill">Perfume / Beauty Retail</span><b>Odoo 17</b></p>
+          <h4>Perfume Retail Catalog &amp; Backend</h4>
+          <p class="problem">A perfume retailer needed their Odoo backend to reflect their premium brand identity with a polished UI and product organization by fragrance brand/house.</p>
+          <details>
+            <summary>What I did</summary>
+            <p>Implemented a product branding system that organizes the catalog by perfume house, enabling brand-based filtering in POS, reports, and inventory. The MUK web theme overhaul gives the entire Odoo backend a modern, clean interface with custom color schemes, improved navigation, an apps bar for quick module access, and enhanced chat/chatter positioning — making daily operations feel premium for staff.</p>
+            <ul class="tags"><li>Product Branding</li><li>Custom Theme</li></ul>
+            <p class="count">7 modules</p>
+          </details>
+        </article>
+        <article class="card reveal" data-category="pos food">
+          <p class="meta"><span class="pill">Nutrition / Supplements</span><b>Odoo 17</b></p>
+          <h4>Nutrition &amp; Supplements Manufacturer</h4>
+          <p class="problem">A nutrition supplement company that both manufactures and retails products needed subscription-based sales, manufacturing BOM tracking for supplement formulations, and detailed daily POS settlement reports.</p>
+          <details>
+            <summary>What I did</summary>
+            <p>Built a subscription API that manages recurring customer orders for supplement programs — customers subscribe to monthly protein/vitamin deliveries that auto-generate sales orders. Manufacturing BOMs define supplement formulations (ingredients, quantities, packaging), and Excel-based BOM reports give production teams printable batch sheets. The POS closing report provides end-of-day summaries with cash counts, payment method breakdowns, and settlement variances. Role-based access ensures retail staff, production teams, and managers each see only what they need. Mass editing tools allow bulk product updates during seasonal pricing changes.</p>
+            <ul class="tags"><li>Subscriptions</li><li>BOM Tracking</li><li>Manufacturing</li><li>Daily Reports</li></ul>
+            <p class="count">6 modules</p>
+          </details>
+        </article>
+        <article class="card reveal" data-category="pos">
+          <p class="meta"><span class="pill">Retail / Payment Processing</span><b>Odoo 19</b></p>
+          <h4>KNET Terminal Integration for Odoo POS</h4>
+          <p class="problem">A Kuwait retailer needed their Odoo 19 POS to communicate directly with PAX KNET payment terminals, enabling card payments to be initiated from the POS screen without manual amount entry on the terminal.</p>
+          <details>
+            <summary>What I did</summary>
+            <p>Developed a KNET payment terminal integration that connects Odoo POS to PAX-based IPoS devices over the local network. When a cashier selects KNET as the payment method, the POS sends the exact amount to the terminal via Nebula TCP service over WiFi/WebSocket, the customer taps their card, and the terminal sends the approval response back to Odoo — eliminating manual keying errors and speeding up checkout. The integration handles transaction timeouts, cancellation flows, and receipt data from the terminal.</p>
+            <ul class="tags"><li>KNET Payment</li><li>PAX Terminal</li><li>WebSocket</li></ul>
+            <p class="count">2 modules</p>
+          </details>
+        </article>
+      </div>
+    </section>
+    <section class="group" style="--c:#6D28D9">
+      <header><h3>HR, Payroll &amp; Enterprise</h3><span>4</span></header>
+      <div class="cards">
+        <article class="card reveal" data-category="hr">
+          <p class="meta"><span class="pill">HR &amp; Attendance</span><b>Odoo 19</b></p>
+          <h4>Biometric Attendance Integration</h4>
+          <p class="problem">A company wanted its attendance terminal to feed Odoo directly.</p>
+          <details>
+            <summary>What I did</summary>
+            <p>Mapped the vendor's WebSocket protocol on the real device using a dedicated test server, to feed a face-recognition terminal into Odoo attendance.</p>
+            <ul class="tags"><li>Biometric</li><li>WebSocket</li><li>HR Attendance</li><li>Device Protocol</li></ul>
+            <p class="count">Verified on device</p>
+          </details>
+        </article>
+        <article class="card reveal" data-category="hr">
+          <p class="meta"><span class="pill">Enterprise HR System</span><b>Odoo 18</b></p>
+          <h4>Group-Wide HR System</h4>
+          <p class="problem">A large group company needed a centralized HR system to manage the full employee lifecycle — from hiring to end-of-service — with mobile access for staff spread across multiple sites, plus automated alerts for expiring documents (visas, licenses, contracts).</p>
+          <details>
+            <summary>What I did</summary>
+            <p>Built a comprehensive HRMS covering employee onboarding, contract management, transfers between departments, salary advances, loan requests with EMI deductions from payroll, overtime calculation, and resignation/end-of-service processing with Kuwait labor law compliance. Leave management includes encashment, balance reports, and holiday-aware scheduling. Document expiry tracking sends automated alerts before visas, work permits, and licenses expire. A mobile connector app lets employees view payslips, request leaves, and check loan balances from their phones. WhatsApp integration pushes notifications for approvals and reminders. Dynamic dashboards give HR managers real-time headcount, attrition, and cost analytics.</p>
+            <ul class="tags"><li>Employee Lifecycle</li><li>Loan Management</li><li>End of Service</li><li>Leave Encashment</li><li>Mobile App</li><li>WhatsApp</li></ul>
+            <p class="count">35+ modules</p>
+          </details>
+        </article>
+        <article class="card reveal" data-category="hr pos accounting">
+          <p class="meta"><span class="pill">Multi-Brand Retail / Enterprise</span><b>Odoo 17</b></p>
+          <h4>Multi-Brand Retail Enterprise</h4>
+          <p class="problem">A multi-brand retail enterprise operating several distinct brands under one holding company needed a unified system where each brand has its own POS, pricing, and accounting — while the holding company gets consolidated financial reports and HR management.</p>
+          <details>
+            <summary>What I did</summary>
+            <p>Built a multi-tenant architecture where each brand operates its own POS with custom pricing, user restrictions, and refund password controls. Multi-currency accounting handles transactions across brands and currencies with consolidated reporting at the holding level. Community HR/payroll manages staff across all brands with centralized salary processing. Dashboard Ninja provides executive-level analytics with customizable KPI widgets. Products support multiple barcodes and auto-generated QR codes for marketing. WhatsApp integration powers appointment booking for service-oriented brands. Budget management and accounting PDF reports give finance teams the control and visibility they need. A custom theme with MUK web modules ensures a consistent, modern interface across all brands.</p>
+            <ul class="tags"><li>Multi-Tenant POS</li><li>HR Payroll</li><li>Budget Control</li><li>Dashboards</li><li>WhatsApp</li></ul>
+            <p class="count">100+ modules</p>
+          </details>
+        </article>
+        <article class="card reveal" data-category="hr">
+          <p class="meta"><span class="pill">Event / Project Consultancy</span><b>Odoo 17</b></p>
+          <h4>Event &amp; Project Consultancy</h4>
+          <p class="problem">An event and project management consultancy needed Odoo customized to track events from planning through execution, manage client relationships, and bulk-import historical accounting data from their previous system.</p>
+          <details>
+            <summary>What I did</summary>
+            <p>Customized Odoo's project module with event-specific fields (venue, dates, headcount, budget), custom stages, and timeline views. Contact management extensions track client history, event preferences, and relationship scoring. Chart of accounts and general data import tools enabled a clean migration from their legacy system with full historical data preserved. Field display enhancements improve usability for staff managing multiple concurrent events.</p>
+            <ul class="tags"><li>Project Management</li><li>Event Management</li><li>CRM</li></ul>
+            <p class="count">6 modules</p>
+          </details>
+        </article>
+      </div>
+    </section>
+    <section class="group" style="--c:#0E7490">
+      <header><h3>Logistics &amp; Delivery Platforms</h3><span>2</span></header>
+      <div class="cards">
+        <article class="card reveal" data-category="logistics">
+          <p class="meta"><span class="pill">Logistics</span><b>Odoo 19</b></p>
+          <h4>B2B Delivery Marketplace Platform</h4>
+          <p class="problem">Businesses and delivery companies needed one marketplace to place, broadcast, deliver and settle orders.</p>
+          <details>
+            <summary>What I did</summary>
+            <p>Built a 13-module platform with client, delivery company and driver APIs. Orders are broadcast by tier once ready for pickup, with area-based assignment, wallet and postpaid payment modes, finance settlement, platform subscriptions and push notifications.</p>
+            <ul class="tags"><li>Tier Broadcasting</li><li>Driver APIs</li><li>Finance</li><li>Subscriptions</li><li>Push</li></ul>
+            <p class="count">13 modules</p>
+          </details>
+        </article>
+        <article class="card reveal" data-category="logistics">
+          <p class="meta"><span class="pill">Last-Mile Delivery</span><b>Odoo 19</b></p>
+          <h4>White-Label Last-Mile Platform</h4>
+          <p class="problem">Delivery operators needed their own branded platform that works with their own fleet and with outside couriers.</p>
+          <details>
+            <summary>What I did</summary>
+            <p>Built a new Odoo 19 suite with a carrier layer for own drivers or courier handoff, multi-leg shipments, route planning with VROOM and OSRM, flexible pricing models with per-order overrides, cash-on-delivery handling and scripted provisioning for each new client.</p>
+            <ul class="tags"><li>Carrier Abstraction</li><li>Multi-Leg</li><li>VROOM</li><li>OSRM</li><li>Pricing Models</li></ul>
+            <p class="count">White-label suite</p>
+          </details>
+        </article>
+      </div>
+    </section>
+    <section class="group" style="--c:#A21CAF">
+      <header><h3>Real Estate</h3><span>1</span></header>
+      <div class="cards">
+        <article class="card reveal" data-category="realestate">
+          <p class="meta"><span class="pill">Real Estate</span><b>Odoo 19</b></p>
+          <h4>Property &amp; Lease Management Suite</h4>
+          <p class="problem">A property company wanted to move from dedicated real estate software to Odoo while keeping its lease, cheque and owner workflows.</p>
+          <details>
+            <summary>What I did</summary>
+            <p>Built an 8-module suite for buildings, standalone properties, tenants, leases and rent schedules, with cheque handling, owner income shares and statements. Maintenance covers work orders, approvals, SLAs, preventive plans and stock materials. Includes 20 notification rules with bilingual templates, dashboards, graphical reports with Excel and PDF export, and an English interface with Arabic name fields.</p>
+            <ul class="tags"><li>Leases</li><li>Cheques</li><li>Owner Statements</li><li>Maintenance</li><li>SLA</li><li>Dashboards</li><li>Bilingual</li></ul>
+            <p class="count">8 modules, 778 automated tests</p>
+          </details>
+        </article>
+      </div>
+    </section>
+    <section class="group" style="--c:#BE123C">
+      <header><h3>CRM &amp; Contact Center</h3><span>2</span></header>
+      <div class="cards">
+        <article class="card reveal" data-category="crm">
+          <p class="meta"><span class="pill">Money Exchange</span><b>Odoo 19</b></p>
+          <h4>Exchange Business CRM</h4>
+          <p class="problem">A money-exchange business wanted a modern CRM that also tracks customer compliance.</p>
+          <details>
+            <summary>What I did</summary>
+            <p>Built a working demo on a real Odoo 19 backend with a full-screen OWL interface across 11 screens, including customer 360, agent desk and pipelines. Includes a stage and SLA automation engine, duplicate detection, a KYC audit trail, consent and do-not-disturb controls, and campaigns.</p>
+            <ul class="tags"><li>OWL</li><li>Customer 360</li><li>Automation Engine</li><li>KYC Audit</li><li>Campaigns</li></ul>
+            <p class="count">11 screens</p>
+          </details>
+        </article>
+        <article class="card reveal" data-category="crm">
+          <p class="meta"><span class="pill">Contact Center</span><b>Odoo 19</b></p>
+          <h4>Outbound Telemarketing Module</h4>
+          <p class="problem">Call teams needed to load contact lists, run calling sessions and see results per agent inside Odoo.</p>
+          <details>
+            <summary>What I did</summary>
+            <p>Built an Odoo 19 module for contact uploads, calling sessions and agent-wise call reports, with Excel export.</p>
+            <ul class="tags"><li>Contact Uploads</li><li>Call Sessions</li><li>Agent Reports</li><li>Excel Export</li></ul>
+            <p class="count">74 automated tests</p>
+          </details>
+        </article>
+      </div>
+    </section>
+    <section class="group" style="--c:#1D4ED8">
+      <header><h3>Insurance Systems</h3><span>2</span></header>
+      <div class="cards">
+        <article class="card reveal" data-category="insurance">
+          <p class="meta"><span class="pill">Insurance Enterprise</span><b>Odoo 17</b></p>
+          <h4>Insurance Policy Management</h4>
+          <p class="problem">An insurance company needed a complete policy management system in Odoo — covering the full policy lifecycle from quote to renewal, claims processing, broker commission tracking, and CRM pipeline for new business acquisition.</p>
+          <details>
+            <summary>What I did</summary>
+            <p>Built an insurance management suite where policies are created, endorsed (modified mid-term), and renewed through structured workflows. Claims processing tracks each claim from filing through investigation to settlement or rejection. Broker and agent commissions are calculated automatically based on policy premiums and payment schedules. The CRM integration turns insurance leads into quotes and eventually bound policies. Policy endorsements handle mid-term changes (adding drivers, changing coverage limits) with premium recalculation. Multi-language support serves the company's diverse client base. A custom theme ensures the interface matches corporate branding.</p>
+            <ul class="tags"><li>Policy Management</li><li>Claims Processing</li><li>Agent Commissions</li><li>Insurance CRM</li></ul>
+            <p class="count">6 modules</p>
+          </details>
+        </article>
+        <article class="card reveal" data-category="insurance">
+          <p class="meta"><span class="pill">Insurance Brokerage</span><b>Odoo 16</b></p>
+          <h4>Insurance Brokerage Platform</h4>
+          <p class="problem">An insurance brokerage needed a system for policy management, claims processing, and financial reporting — with a self-service portal for customers and agents to track their policies and commissions.</p>
+          <details>
+            <summary>What I did</summary>
+            <p>Built an insurance platform where policies flow through creation, endorsement, and renewal stages with full audit trails. Claims management handles the filing-to-settlement pipeline with document attachments and status tracking. A customer/agent portal lets policyholders view their active policies, download documents, and track claims, while agents see their book of business and commission statements. Financial modules include journal entry approval workflows (preventing unauthorized entries), recurring accounting entries for premium installments, GL reports, account follow-up automation, and payment voucher generation. A document template system produces standardized policy documents, endorsement letters, and customer receipts with the company's branding.</p>
+            <ul class="tags"><li>Audit Trails</li><li>Policy Portal</li><li>Claims Workflow</li><li>Document Templates</li><li>Payment Vouchers</li></ul>
+            <p class="count">17 modules</p>
+          </details>
+        </article>
+      </div>
+    </section>
+    <section class="group" style="--c:#C2410C">
+      <header><h3>E-Commerce &amp; Integrations</h3><span>5</span></header>
+      <div class="cards">
+        <article class="card reveal" data-category="ecommerce">
+          <p class="meta"><span class="pill">Consumer Brand</span><b>Odoo 19</b></p>
+          <h4>Multi-Channel Marketplace Operations</h4>
+          <p class="problem">A consumer brand selling on several marketplaces needed orders, tax, discounts and shipping handled in one place.</p>
+          <details>
+            <summary>What I did</summary>
+            <p>Built connectors for Amazon, Flipkart (including multiple accounts) and Shopify, with tax and discount capture, a custom product master, a product information module for channel listings, shipping labels and Shiprocket carrier booking.</p>
+            <ul class="tags"><li>Amazon SP-API</li><li>Flipkart</li><li>Shopify</li><li>Shiprocket</li><li>PIM</li></ul>
+            <p class="count">Multi-channel</p>
+          </details>
+        </article>
+        <article class="card reveal" data-category="ecommerce">
+          <p class="meta"><span class="pill">Retail</span><b>Odoo 19</b></p>
+          <h4>Ordable Storefront &amp; Stock Tracker</h4>
+          <p class="problem">A retailer selling on an Ordable storefront needed clearer stock visibility in Odoo.</p>
+          <details>
+            <summary>What I did</summary>
+            <p>Worked on an Ordable storefront integration on Odoo 19 Enterprise and delivered a stock tracker now in live use.</p>
+            <ul class="tags"><li>Ordable</li><li>Order Import</li><li>Stock Tracker</li></ul>
+            <p class="count">Live in production</p>
+          </details>
+        </article>
+        <article class="card reveal" data-category="ecommerce">
+          <p class="meta"><span class="pill">Retail / Shopify</span><b>Odoo 17 + Odoo 15</b></p>
+          <h4>Retail Chain: Shopify Integration</h4>
+          <p class="problem">A retail chain selling through both physical stores and a Shopify e-commerce site needed orders, products, and inventory synced bidirectionally between Shopify and Odoo — with Kuwait-specific payment processing and localized payroll.</p>
+          <details>
+            <summary>What I did</summary>
+            <p>Built a Shopify-Odoo bridge that syncs products (including images, prices, variants), customer records, and orders in real time. When a Shopify order comes in, Odoo creates the sales order, reserves stock, and generates the delivery. MyFatoorah payment gateway handles Kuwait card payments for the online store. Inventory is tracked by brand, enabling brand-level stock reports and purchasing decisions. A stock card report gives warehouse teams item-by-item movement history. Kuwait-specific HR payroll handles indemnity, leave calculations, and salary structures per local labor law. The system was originally built on v15 and later migrated and enhanced on v17, demonstrating long-term continuity.</p>
+            <ul class="tags"><li>Shopify Sync</li><li>MyFatoorah</li><li>Brand Inventory</li><li>Kuwait Payroll</li></ul>
+            <p class="count">35+ modules (v17) + 31 (v15)</p>
+          </details>
+        </article>
+        <article class="card reveal" data-category="ecommerce">
+          <p class="meta"><span class="pill">E-Commerce / Delivery</span><b>Odoo 17</b></p>
+          <h4>E-Commerce Fulfillment &amp; Delivery</h4>
+          <p class="problem">An e-commerce business selling through Shopify needed automated order fulfillment with Porter delivery integration, real-time inventory sync, and dropshipping support for products they don't warehouse themselves.</p>
+          <details>
+            <summary>What I did</summary>
+            <p>Integrated the Emipro Shopify EPT connector for full bidirectional sync — products, orders, customers, and inventory levels update automatically between platforms. When an order is confirmed, the Porter Express delivery API is called to schedule pickup, assign a driver, and track delivery in real time with status updates flowing back to both Odoo and the customer. Dropshipping workflows route certain orders directly to supplier fulfillment without touching the company's warehouse. Inventory sync prevents overselling by updating Shopify stock counts whenever Odoo stock moves (sales, receipts, adjustments, returns).</p>
+            <ul class="tags"><li>Shopify EPT</li><li>Porter Delivery</li><li>Dropshipping</li><li>Inventory Sync</li></ul>
+            <p class="count">4 modules</p>
+          </details>
+        </article>
+        <article class="card reveal" data-category="ecommerce accounting">
+          <p class="meta"><span class="pill">Distribution / Wholesale</span><b>Odoo 16</b></p>
+          <h4>B2B Distribution: Dual E-Commerce</h4>
+          <p class="problem">A B2B distribution company selling through both Shopify and WooCommerce needed unified order management, consolidated financial reporting (MIS), budget control, and the ability to bulk-cancel orders and transfers when suppliers fail to deliver.</p>
+          <details>
+            <summary>What I did</summary>
+            <p>Built dual e-commerce integration — both Shopify and WooCommerce connectors feed orders into the same Odoo backend with unified inventory. MIS Builder provides management-level financial reports with drill-down from P&amp;L to individual journal entries, configurable budget vs. actual comparisons, and multi-level account hierarchies. An Excel connector enables bidirectional data exchange for finance teams who prefer spreadsheet analysis. Bulk operations allow mass cancellation of sales orders and picking operations when large orders fall through. Date range filtering across all reports ensures flexible period analysis.</p>
+            <ul class="tags"><li>Shopify</li><li>WooCommerce</li><li>MIS Reports</li><li>Budget</li><li>Excel Connector</li></ul>
+            <p class="count">15 modules</p>
+          </details>
+        </article>
+      </div>
+    </section>
+    <section class="group" style="--c:#4D7C0F">
+      <header><h3>Accounting &amp; Financial Systems</h3><span>1</span></header>
+      <div class="cards">
+        <article class="card reveal" data-category="accounting">
+          <p class="meta"><span class="pill">Accounting / Financial</span><b>Odoo 17</b></p>
+          <h4>Accounting Reporting Suite</h4>
+          <p class="problem">A business with multi-currency transactions, a Magento e-commerce store, and recurring payment obligations needed a comprehensive accounting suite with automated bank reconciliation and asset depreciation tracking.</p>
+          <details>
+            <summary>What I did</summary>
+            <p>Built a full accounting reporting suite with automated bank statement import and AI-assisted reconciliation that matches bank transactions to Odoo journal entries. Magento integration syncs e-commerce orders and payments into the accounting system. Recurring payment automation handles monthly rent, subscriptions, and installment plans without manual entry. Asset management tracks fixed assets through their lifecycle with automatic depreciation schedules. Budget management sets departmental spending limits with real-time tracking against actuals. Daily accounting reports give the finance team a snapshot of cash position, receivables, and payables. Dynamic accounting reports allow on-the-fly customization of financial statements.</p>
+            <ul class="tags"><li>Bank Reconciliation</li><li>Magento</li><li>Recurring Payments</li><li>Asset Management</li><li>Budget Control</li></ul>
+            <p class="count">22 modules</p>
+          </details>
+        </article>
+      </div>
+    </section>
+    <section class="group" style="--c:#475569">
+      <header><h3>Trading, SaaS &amp; Specialized</h3><span>5</span></header>
+      <div class="cards">
+        <article class="card reveal" data-category="trading">
+          <p class="meta"><span class="pill">Trading / MetaTrader</span><b>Odoo 18</b></p>
+          <h4>Forex Brokerage Back Office</h4>
+          <p class="problem">A forex trading brokerage needed Odoo to serve as their back-office platform — managing trader accounts, syncing with MetaTrader servers, processing deposits via Tap payments, generating leads from Facebook, and providing commission-based offer management for IBs (introducing brokers).</p>
+          <details>
+            <summary>What I did</summary>
+            <p>Built a trading management portal that connects to MetaTrader servers via API to pull live trading account data (balance, equity, margin, open positions). CRM pipelines manage trader acquisition from lead to funded account, with Facebook lead generation ads feeding directly into the pipeline. Introducing broker (IB) commission offers go through an approval workflow before activation. The Tap payment gateway handles trader deposits. External database connectors (MySQL, MSSQL, SQLite) pull trading analytics from the brokerage's data warehouse. Dow Jones integration provides market data feeds. A trader self-service portal lets clients view their accounts, make deposits, and track commissions. Comprehensive audit logging tracks every action for regulatory compliance.</p>
+            <ul class="tags"><li>MetaTrader API</li><li>Trading CRM</li><li>Dow Jones</li><li>Tap Pay</li><li>Facebook Leads</li><li>Audit Logging</li></ul>
+            <p class="count">24+ modules</p>
+          </details>
+        </article>
+        <article class="card reveal" data-category="trading">
+          <p class="meta"><span class="pill">B2B SaaS / Payment Processing</span><b>Odoo 16</b></p>
+          <h4>B2B SaaS Recurring Billing</h4>
+          <p class="problem">A B2B SaaS billing platform needed to automate recurring billing cycles, support multiple US payment gateways (NMI, Cybersource), merge invoices for clients with multiple subscriptions, and provide a branded customer portal for payment and contract management.</p>
+          <details>
+            <summary>What I did</summary>
+            <p>Built an automated billing engine that generates monthly invoices based on active contracts, processes payments through NMI or Cybersource gateways (configurable per client), and handles failed payment retries. Invoice merging consolidates multiple subscription charges into a single monthly bill per client. A self-service customer portal lets clients view invoices, update payment methods, manage projects/tasks, and download documents. NMI contract management tracks recurring card-on-file agreements. Security features include reCAPTCHA on signup, GeoIP-based redirects for regional compliance, and digital signature collection on agreements. Monthly invoice overview reports give the finance team a bird's eye view of recurring revenue.</p>
+            <ul class="tags"><li>NMI Gateway</li><li>Cybersource</li><li>Auto Billing</li><li>Invoice Merging</li><li>Customer Portal</li></ul>
+            <p class="count">18 modules</p>
+          </details>
+        </article>
+        <article class="card reveal" data-category="trading">
+          <p class="meta"><span class="pill">Enterprise / Manufacturing</span><b>Odoo 13</b></p>
+          <h4>Multi-Division Enterprise Suite</h4>
+          <p class="problem">A Kuwaiti enterprise spanning manufacturing, retail, and services needed a unified Odoo 13 system with local payment gateways (KNET, MPGS), warehouse automation (pick-pack-ship), returns management, and an internal service desk for cross-department requests.</p>
+          <details>
+            <summary>What I did</summary>
+            <p>Built a large-scale enterprise suite with 100+ modules. Payment processing supports KNET, MasterCard, and MPGS for both POS and e-commerce. The warehouse runs a full pick-pack-ship workflow where pickers scan QR codes on bins to confirm correct items, packers verify and box orders, and shipping generates carrier labels. RMA handles customer returns with reason codes, replacement orders, and credit note generation. Demand forecasting analyzes sales history to predict reorder needs. A CRND-based service desk lets departments raise internal requests (IT, maintenance, procurement) with SLA tracking. Multi-UOM pricelists handle products sold in different units (kg, box, pallet) to different customer segments. Employee end-of-service and payslip modules handle Kuwait labor law requirements.</p>
+            <ul class="tags"><li>KNET</li><li>MPGS</li><li>RMA</li><li>Pick-Pack-Ship</li><li>Service Desk</li><li>QR Picking</li></ul>
+            <p class="count">100+ modules</p>
+          </details>
+        </article>
+        <article class="card reveal" data-category="trading">
+          <p class="meta"><span class="pill">Creative Agency / SaaS</span><b>Odoo 18</b></p>
+          <h4>WhatsApp Order Automation Platform</h4>
+          <p class="problem">A Saudi creative agency / digital platform needed WhatsApp-driven order automation (customers order via WhatsApp, invoices generated automatically), appointment booking with calendar sync, and a multi-tenant SaaS architecture to serve multiple sub-clients from one instance.</p>
+          <details>
+            <summary>What I did</summary>
+            <p>Built WhatsApp automation where customer messages trigger order creation in Odoo with auto-generated invoices sent back via WhatsApp. An appointment booking system with calendar integration lets clients schedule sessions, with WhatsApp confirmations and reminders. Gantt chart views give managers visual scheduling of team capacity and project timelines. The Sadad payment gateway handles Saudi domestic payments. Video upload and management supports the agency's content production workflow. A SaaS multi-tenant architecture lets the platform spin up isolated instances for sub-clients, each with their own data and configuration, managed from a central master instance.</p>
+            <ul class="tags"><li>WhatsApp Auto</li><li>Appointments</li><li>Sadad Pay</li><li>SaaS</li><li>Gantt</li></ul>
+            <p class="count">18 modules</p>
+          </details>
+        </article>
+        <article class="card reveal" data-category="pos ecommerce">
+          <p class="meta"><span class="pill">Luxury Retail</span><b>Odoo 18</b></p>
+          <h4>Luxury Watch Retail CRM</h4>
+          <p class="problem">A luxury watch retailer needed a CRM to manage high-value customer relationships, product catalog organized by watch brand, and media management for product photography and marketing content.</p>
+          <details>
+            <summary>What I did</summary>
+            <p>Extended Odoo's CRM with luxury-retail-specific fields — tracking customer preferences, purchase history, and wish lists for high-value items. Products are organized by watch brand with brand-level reporting on sales performance and inventory value. Audio and media capabilities support in-store product presentations and marketing content management. The CRM pipeline tracks leads from initial interest through consultation to purchase with value-based prioritization.</p>
+            <ul class="tags"><li>CRM</li><li>Product Branding</li><li>Media</li></ul>
+            <p class="count">3 modules</p>
+          </details>
+        </article>
+      </div>
+    </section>
+    <section class="group" style="--c:#7C3AED">
+      <header><h3>Odoo 20</h3><span>2</span></header>
+      <div class="cards">
+        <article class="card reveal" data-category="odoo20 trading">
+          <p class="meta"><span class="pill">Trading</span><b>Odoo 20</b></p>
+          <h4>Trading Company on Odoo 20 Enterprise</h4>
+          <p class="problem">A UAE trading company needed sales, purchasing, inventory and invoicing on the newest Odoo, with its website alongside.</p>
+          <details>
+            <summary>What I did</summary>
+            <p>Set up Odoo 20 Enterprise with UAE localization and VAT, and rebuilt the company's website inside Odoo.</p>
+            <ul class="tags"><li>Odoo 20</li><li>UAE VAT</li><li>Sales</li><li>Purchase</li><li>Inventory</li><li>Website</li></ul>
+            <p class="count">Full implementation</p>
+          </details>
+        </article>
+        <article class="card reveal" data-category="odoo20 pos mobile">
+          <p class="meta"><span class="pill">Retail &amp; Restaurants</span><b>Odoo 20</b></p>
+          <h4>POS Platform Migrated to Odoo 20 Community</h4>
+          <p class="problem">A POS product needed to move to Odoo 20 without breaking its modules, its API or its tablet app.</p>
+          <details>
+            <summary>What I did</summary>
+            <p>Migrated 18 backend modules and the Flutter app to Odoo 20 Community, verified by the automated test suites and a full API sweep. Final device testing is in progress.</p>
+            <ul class="tags"><li>Odoo 20</li><li>Migration</li><li>API Sweep</li><li>Flutter</li></ul>
+            <p class="count">18 modules, 974 backend tests</p>
+          </details>
+        </article>
+      </div>
+    </section>
+    <section class="group" style="--c:#B91C1C">
+      <header><h3>Migration, Audit &amp; Rescue</h3><span>4</span></header>
+      <div class="cards">
+        <article class="card reveal" data-category="migration accounting">
+          <p class="meta"><span class="pill">Accounting</span><b>Odoo 19</b></p>
+          <h4>Xero to Odoo 19 Migration</h4>
+          <p class="problem">Companies leaving Xero need their accounting in Odoo, with Xero left untouched.</p>
+          <details>
+            <summary>What I did</summary>
+            <p>Built four reusable modules that read from Xero without changing it and load accounting, stock, sales, purchase and asset data into Odoo. One live company went with opening balances, with its full history kept separately.</p>
+            <ul class="tags"><li>Xero</li><li>Data Migration</li><li>Read-Only Import</li><li>Opening Balances</li></ul>
+            <p class="count">4 modules, 93 automated tests</p>
+          </details>
+        </article>
+        <article class="card reveal" data-category="migration">
+          <p class="meta"><span class="pill">Hospitality &amp; Retail</span><b>Odoo 18</b></p>
+          <h4>High-Volume Production Cleanup</h4>
+          <p class="problem">A large production database had built up stuck stock transfers, orphan archived contacts and duplicate partners.</p>
+          <details>
+            <summary>What I did</summary>
+            <p>Cancelled and verified 117,181 stuck stock transfers, removed 47,697 orphan archived partners and deduplicated live partner records, using reusable scripts on production.</p>
+            <ul class="tags"><li>Production Data</li><li>Stock Cleanup</li><li>Partner Dedupe</li><li>Verification</li></ul>
+            <p class="count">160,000+ records cleaned</p>
+          </details>
+        </article>
+        <article class="card reveal" data-category="migration">
+          <p class="meta"><span class="pill">Hospitality &amp; Retail</span><b>Odoo 18</b></p>
+          <h4>Performance Audit &amp; Report Engine</h4>
+          <p class="problem">A large deployment had slow routes and long-running reports.</p>
+          <details>
+            <summary>What I did</summary>
+            <p>Audited slow routes, shipped fixes and built an asynchronous report engine so heavy reports run in the background, then hardened it against data loss, slot leaks and memory limits.</p>
+            <ul class="tags"><li>Performance</li><li>Async Reports</li><li>PostgreSQL</li><li>Hardening</li></ul>
+            <p class="count">Scalability work</p>
+          </details>
+        </article>
+        <article class="card reveal" data-category="migration accounting hr">
+          <p class="meta"><span class="pill">Hospitality &amp; Retail</span><b>Odoo 18</b></p>
+          <h4>Accounting &amp; Payroll Rescue</h4>
+          <p class="problem">A production system had duplicate and missing journal entries and payroll errors.</p>
+          <details>
+            <summary>What I did</summary>
+            <p>Fixed duplicate and missing journal entries, closed a double-approval gap that doubled stock and accounting, and corrected landed-cost and unit-of-measure costing. Payroll hardening delivered 20 fixes.</p>
+            <ul class="tags"><li>Journal Entries</li><li>AVCO</li><li>Landed Cost</li><li>Payroll</li></ul>
+            <p class="count">161 payroll tests</p>
+          </details>
+        </article>
+      </div>
+    </section>
+    <section class="group" style="--c:#0F766E">
+      <header><h3>Products &amp; Tools</h3><span>5</span></header>
+      <div class="cards">
+        <article class="card reveal" data-category="tools">
+          <p class="meta"><span class="pill">Odoo Community</span><b>Odoo 19</b></p>
+          <h4>Enterprise-Style Backend Theme</h4>
+          <p class="problem">Odoo Community users wanted a cleaner backend without an Enterprise subscription.</p>
+          <details>
+            <summary>What I did</summary>
+            <p>Wrote a theme from scratch with a full-screen home menu, app and menu search, optional sidebar, phone layout, branded login and dark mode. Later ported to Odoo 20.</p>
+            <ul class="tags"><li>OWL</li><li>SCSS</li><li>Dark Mode</li><li>Odoo 19</li><li>Odoo 20</li></ul>
+            <p class="count">20 automated tests</p>
+          </details>
+        </article>
+        <article class="card reveal" data-category="tools pos">
+          <p class="meta"><span class="pill">Retail</span><b>Odoo 19</b></p>
+          <h4>POS to Sale Order Cycle</h4>
+          <p class="problem">Retailers selling on order needed the full sale order cycle from the POS, with correct accounting.</p>
+          <details>
+            <summary>What I did</summary>
+            <p>Built a module that runs sale orders from the POS, including down payments and invoicing, with company and access checks.</p>
+            <ul class="tags"><li>POS</li><li>Sale Orders</li><li>Down Payments</li><li>Invoicing</li></ul>
+            <p class="count">33 automated tests</p>
+          </details>
+        </article>
+        <article class="card reveal" data-category="tools hr">
+          <p class="meta"><span class="pill">Productivity</span><b>Python</b></p>
+          <h4>Workforce Activity Tracker</h4>
+          <p class="problem">Teams wanted accurate measured work time.</p>
+          <details>
+            <summary>What I did</summary>
+            <p>Built a desktop client, a FastAPI server and an Odoo dashboard. The client measures engaged, passive and idle time, and the dashboard shows the results.</p>
+            <ul class="tags"><li>Desktop Client</li><li>FastAPI</li><li>OWL Dashboard</li><li>Measured Time</li></ul>
+            <p class="count">3 codebases</p>
+          </details>
+        </article>
+        <article class="card reveal" data-category="tools">
+          <p class="meta"><span class="pill">Pharma &amp; Skincare</span><b>Odoo</b></p>
+          <h4>Medical Rep Visit Portal</h4>
+          <p class="problem">Medical reps and promoters needed to log visits from their phones without paying for extra user seats.</p>
+          <details>
+            <summary>What I did</summary>
+            <p>Built a phone-first portal on standard portal users for doctor visits and pharmacy sales, with promoted products, samples, next-visit wishlists and manager approval that deducts stock.</p>
+            <ul class="tags"><li>Portal</li><li>Mobile Web</li><li>Approvals</li><li>Samples</li></ul>
+            <p class="count">Phone-first portal</p>
+          </details>
+        </article>
+        <article class="card reveal" data-category="tools">
+          <p class="meta"><span class="pill">Web</span><b>Web</b></p>
+          <h4>Company Websites</h4>
+          <p class="problem">Companies needed marketing sites with enquiries flowing straight to their teams.</p>
+          <details>
+            <summary>What I did</summary>
+            <p>Built a Next.js marketing site for a POS product, and an Odoo 19 website for an energy company with content managed in Odoo and enquiries sent to CRM.</p>
+            <ul class="tags"><li>Next.js</li><li>React</li><li>Odoo Website</li><li>CRM Leads</li></ul>
+            <p class="count">2 sites</p>
+          </details>
+        </article>
+      </div>
+    </section>
+  </div>
+</section>
+
+<section class="band alt" id="expertise">
+  <div class="wrap">
+    <h2>Technical expertise</h2>
+    <dl class="xps">
+      <div class="xp reveal"><dt>Consulting &amp; Delivery</dt><dd>Requirement Gathering · Business Process Mapping · Automated Testing · Code Review · Staging Sign-Off · Production Deployment · Docker &amp; Traefik</dd></div>
+      <div class="xp reveal"><dt>Mobile (Flutter)</dt><dd>Flutter &amp; Dart · Riverpod · Drift Offline DB · Firebase Push · ESC/POS Printing · Android &amp; iOS · Odoo Mobile APIs</dd></div>
+      <div class="xp reveal"><dt>Odoo Core</dt><dd>Odoo 11-20 · ORM &amp; Models · XML Views · QWeb Reports · Wizards · Cron Jobs · Security ACL · Multi-Company</dd></div>
+      <div class="xp reveal"><dt>POS &amp; Frontend</dt><dd>POS JS/OWL · Kitchen Display · Receipt Design · WebSocket · Mobile APIs · REST Controllers · Portal Views</dd></div>
+      <div class="xp reveal"><dt>Inventory &amp; Supply Chain</dt><dd>Stock Quants · Lot Tracking · Negative Stock · Material Requests · Intercompany Transfers · Barcode/ZPL · RMA Returns</dd></div>
+      <div class="xp reveal"><dt>Payment Gateways</dt><dd>KNET · MyFatoorah · Hesabe · Tap · Sadad · Cybersource · NMI · Afterpay/ZipPay · MPGS · Deema</dd></div>
+      <div class="xp reveal"><dt>Integrations</dt><dd>Shopify · WooCommerce · Magento · UrbanPiper · MetaTrader · Porter Delivery · WhatsApp API · Facebook Leads · Amazon SP-API · Flipkart · Shiprocket · Ordable · Xero</dd></div>
+      <div class="xp reveal"><dt>Healthcare &amp; Vertical</dt><dd>HMS/EMR · Patient Portal · Lab/Radiology · Pharmacy POS · Insurance Claims · Doctor Scheduling · ICD-10 Coding · Video Consult</dd></div>
+      <div class="xp reveal"><dt>Accounting &amp; Finance</dt><dd>Multi-Currency · Bank Reconciliation · MIS Reporting · Budget Management · Insurance Billing · Commission Engine · Kuwait Localization</dd></div>
+      <div class="xp reveal"><dt>Infrastructure</dt><dd>PostgreSQL · XML-RPC · Nginx · Ubuntu/Linux · Git/GitHub · Audit Logging · API Key Auth · National ID Card Reader</dd></div>
+    </dl>
+  </div>
+</section>
+
+<section class="dark close" id="contact">
+  <div class="wrap">
+    <p class="closeline">I tell you plainly what's done and what isn't.</p>
+    <p class="big">Tell me what you're trying to build or fix and which Odoo version you're on, and I'll suggest a practical next step.</p>
+    <a class="btn" href="https://www.upwork.com/freelancers/~01d5ccd6340b47c4d6" rel="noopener">View my Upwork profile</a>
+    <p class="foot">&copy; 2026 Husain. Odoo Techno-Functional Consultant.</p>
+  </div>
+</section>
+</main>
+
+<script>
+(function () {
+  var chips = document.querySelectorAll('.chip');
+  var cards = document.querySelectorAll('.card');
+  var groups = document.querySelectorAll('.group');
+  function apply(filter) {
+    cards.forEach(function (c) {
+      c.hidden = filter !== 'all' && c.dataset.category.split(' ').indexOf(filter) < 0;
+    });
+    groups.forEach(function (g) { g.hidden = !g.querySelector('.card:not([hidden])'); });
+    chips.forEach(function (b) { b.setAttribute('aria-pressed', String(b.dataset.filter === filter)); });
+  }
+  chips.forEach(function (b) {
+    b.addEventListener('click', function () { apply(b.dataset.filter); });
+  });
+})();
+</script>
+</body>
+</html>
